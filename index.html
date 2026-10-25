@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Wise | Vigyan Bhawan</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>♻️ Waste Wise</h1>
+  <p>Solid Waste Segregation Awareness Programme</p>
+  <p>Vigyan Bhawan | IIT Roorkee</p>
+</header>
+
+<main>
+  <section id="registration" class="card">
+    <h2>Student Registration</h2>
+    <form id="registrationForm">
+      <label for="studentName">Full Name</label>
+      <input id="studentName" required maxlength="100"
+             placeholder="Enter your name">
+
+      <label for="enrollment">Enrollment ID</label>
+      <input id="enrollment" required maxlength="60"
+             placeholder="Enter your enrollment ID">
+
+      <button type="submit">Start Game →</button>
+    </form>
+  </section>
+
+  <section id="game" class="card hidden">
+    <h2>Round 1: Sort the Waste</h2>
+    <p id="progress"></p>
+
+    <div class="waste-card">
+      <div id="wasteEmoji">🍌</div>
+      <h3 id="wasteName">Banana Peel</h3>
+      <p>Which bin should this item go into?</p>
+    </div>
+
+    <div class="bins">
+      <button class="bin blue" id="blueBin" type="button">
+        <span>🗑️</span>
+        <strong>BLUE BIN</strong>
+        <small>Dry Waste</small>
+        <small>Paper, cardboard, recyclable plastic</small>
+      </button>
+
+      <button class="bin green" id="greenBin" type="button">
+        <span>🗑️</span>
+        <strong>GREEN BIN</strong>
+        <small>Wet Waste</small>
+        <small>Food scraps, fruit peels</small>
+      </button>
+    </div>
+
+    <p id="feedback" aria-live="polite"></p>
+    <button id="nextButton" class="hidden" type="button">
+      Next Item →
+    </button>
+  </section>
+
+  <section id="quiz" class="card hidden">
+    <h2>Round 2: Awareness Quiz</h2>
+    <form id="quizForm"></form>
+    <p id="quizFeedback" aria-live="polite"></p>
+  </section>
+
+  <section id="results" class="card hidden">
+    <h2>🏆 Your Results</h2>
+    <div id="resultDetails"></div>
+    <button id="saveButton" type="button">Save Results</button>
+    <button id="restartButton" type="button">Play Again</button>
+    <p id="saveStatus" aria-live="polite"></p>
+  </section>
+
+  <section class="card awareness">
+    <h2>🌱 Keep Vigyan Bhawan Clean</h2>
+    <p>✅ Separate wet and dry waste.</p>
+    <p>✅ Reuse materials and reduce plastic waste.</p>
+    <p>✅ Dispose of batteries and e-waste at designated points.</p>
+    <p>🎂 Celebrate birthdays responsibly: separate food scraps,
+       recyclable packaging, and decorations.</p>
+  </section>
+</main>
+
+<footer>
+  Waste Wise ♻️ | Think Green. Keep Our Campus Clean.
+</footer>
+
+</body>
+</html>

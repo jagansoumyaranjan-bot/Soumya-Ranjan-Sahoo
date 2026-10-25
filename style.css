@@ -1,0 +1,185 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f7f3;
+  color: #20352b;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(120deg, #126b42, #278d61);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+header h1 {
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+main {
+  width: min(900px, 94%);
+  margin: 25px auto;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  margin-bottom: 22px;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px #0000000c;
+}
+
+h2 {
+  color: #176c43;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd8cf;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form > button,
+#nextButton,
+#saveButton,
+#restartButton {
+  background: #176c43;
+  color: white;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.waste-card {
+  margin: 20px 0;
+  padding: 25px;
+  background: #f5faf7;
+  text-align: center;
+  border-radius: 12px;
+}
+
+#wasteEmoji {
+  font-size: 65px;
+}
+
+#wasteName {
+  font-size: 25px;
+  margin: 8px 0;
+}
+
+.bins {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.bin {
+  color: white;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s;
+}
+
+.bin:hover {
+  transform: translateY(-4px);
+}
+
+.bin span {
+  font-size: 42px;
+}
+
+.bin strong {
+  font-size: 22px;
+}
+
+.bin small {
+  font-size: 14px;
+}
+
+.blue {
+  background: #1976d2;
+}
+
+.green {
+  background: #21864d;
+}
+
+#feedback,
+#quizFeedback,
+#saveStatus {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.question {
+  background: #f5faf7;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.question p {
+  font-weight: bold;
+}
+
+.question label {
+  font-weight: normal;
+}
+
+.question input {
+  width: auto;
+  margin-right: 8px;
+}
+
+.awareness {
+  background: #e4f5e9;
+  border-left: 5px solid #21864d;
+}
+
+footer {
+  background: #153c2b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 550px) {
+  .bins {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
